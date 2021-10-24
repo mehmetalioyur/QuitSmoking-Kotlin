@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="-10dp"
+            android:background="@drawable/grey_background"
+            android:elevation="1dp"
+            android:paddingHorizontal="10dp"
+            android:text="Sigara Bırakma Tarihi"
+            android:textColor="#591A1A"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/quitDateEdit"
+            app:layout_constraintStart_toStartOf="@+id/quitDateEdit" />
+
+        <TextView
+            android:id="@+id/quitDateEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_background"
+            android:hint="Tarih İçin Tıklayınız"
+            android:padding="10dp"
+            android:textColorHint="#858585"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:id="@+id/quitDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="-10dp"
+            android:background="@drawable/grey_background"
+            android:elevation="1dp"
+            android:paddingHorizontal="10dp"
+            android:text="Sigara Bırakma Tarihi"
+            android:textColor="#591A1A"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/quitTimeEdit"
+            app:layout_constraintStart_toStartOf="@+id/quitTimeEdit" />
+
+        <TextView
+            android:id="@+id/quitTimeEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_background"
+            android:hint="Zaman Seçmek İçin Tıklayınız"
+            android:padding="10dp"
+            android:textColorHint="#858585"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/black"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="-10dp"
+            android:background="@drawable/grey_background"
+            android:elevation="1dp"
+            android:paddingHorizontal="10dp"
+            android:text="Günde Kaç Sigara İçiyorsunuz ?"
+            android:textColor="#591A1A"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/dailySmokedEdit"
+            app:layout_constraintStart_toStartOf="@+id/dailySmokedEdit" />
+
+        <EditText
+            android:id="@+id/dailySmokedEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_background"
+            android:hint="Bir Günde Kaç Adet Sigara İçiyorsunuz ?"
+            android:inputType="numberSigned"
+            android:padding="10dp"
+            android:textColorHint="#858585"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="-10dp"
+            android:background="@drawable/grey_background"
+            android:elevation="1dp"
+            android:paddingHorizontal="10dp"
+            android:text="Paketteki Sigara Sayısı"
+            android:textColor="#591A1A"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/piecesInBoxEdit"
+            app:layout_constraintStart_toStartOf="@+id/piecesInBoxEdit" />
+
+        <EditText
+            android:id="@+id/piecesInBoxEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_background"
+            android:hint="Bir Paketteki Sigara Sayısını Giriniz"
+            android:inputType="numberSigned"
+
+            android:padding="10dp"
+            android:textColorHint="#858585"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="-10dp"
+            android:background="@drawable/grey_background"
+            android:elevation="1dp"
+            android:paddingHorizontal="10dp"
+            android:text="Sigara Fiyatı"
+            android:textColor="#591A1A"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/priceOfCigaretteEdit"
+            app:layout_constraintStart_toStartOf="@+id/priceOfCigaretteEdit" />
+
+        <EditText
+            android:id="@+id/priceOfCigaretteEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/grey_background"
+            android:hint="Bir Paket Sigara Fiyatını Giriniz."
+            android:inputType="numberDecimal"
+
+            android:padding="10dp"
+            android:textColorHint="#858585"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Kaydet"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_margin="30dp"
+        android:background="@drawable/grey_background"
+        android:textStyle="bold" />
+
+
+<DatePicker
+    android:id="@+id/selamlar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"></DatePicker>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

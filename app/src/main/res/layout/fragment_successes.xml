@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuccessesFragment"
+    android:background="@drawable/second_green_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_margin="10sp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/grey_background">
+
+
+            <ProgressBar
+                android:layout_marginLeft="20dp"
+                android:id="@+id/firstProgress"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/grey_background"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/circle_progress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:progress="80" />
+
+            <TextView
+                android:id="@+id/firstText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="10sp"
+                android:elevation="1dp"
+                android:text="%100"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/firstProgress"
+                app:layout_constraintEnd_toEndOf="@+id/firstProgress"
+                app:layout_constraintStart_toStartOf="@+id/firstProgress"
+                app:layout_constraintTop_toTopOf="@+id/firstProgress">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Kan basıncınız ve nabzınız normal seviyesine ulaştı."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/firstProgress"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.49" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grey_background"
+            android:layout_marginVertical="10dp">
+
+
+            <ProgressBar
+                android:layout_marginLeft="20dp"
+                android:id="@+id/secondProgress"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/grey_background"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/circle_progress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:progress="80" />
+
+            <TextView
+                android:id="@+id/secondText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="10sp"
+                android:elevation="1dp"
+                android:text="%100"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/secondProgress"
+                app:layout_constraintEnd_toEndOf="@+id/secondProgress"
+                app:layout_constraintStart_toStartOf="@+id/secondProgress"
+                app:layout_constraintTop_toTopOf="@+id/secondProgress">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Kandaki oksijen düzeyiniz normale döndü, kalp krizi geçirme riskiniz azaldı."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/secondProgress"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.49" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/grey_background">
+
+
+            <ProgressBar
+                android:layout_marginLeft="20dp"
+                android:id="@+id/thirdProgress"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/grey_background"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/circle_progress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:progress="80" />
+
+            <TextView
+                android:id="@+id/thirdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="10sp"
+                android:elevation="1dp"
+                android:text="%100"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/thirdProgress"
+                app:layout_constraintEnd_toEndOf="@+id/thirdProgress"
+                app:layout_constraintStart_toStartOf="@+id/thirdProgress"
+                app:layout_constraintTop_toTopOf="@+id/thirdProgress">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Vücudunuz karbonmonoksitten arındı"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/thirdProgress"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.49" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grey_background"
+            android:layout_marginVertical="10dp">
+
+
+            <ProgressBar
+                android:layout_marginLeft="20dp"
+                android:id="@+id/fourthProgress"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/grey_background"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/circle_progress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:progress="80" />
+
+            <TextView
+                android:id="@+id/fourthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="10sp"
+                android:elevation="1dp"
+                android:text="%100"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/fourthProgress"
+                app:layout_constraintEnd_toEndOf="@+id/fourthProgress"
+                app:layout_constraintStart_toStartOf="@+id/fourthProgress"
+                app:layout_constraintTop_toTopOf="@+id/fourthProgress">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Kanınızdaki nikotin düzeyi azaldı, tat ve koku duyunuz arttı."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fourthProgress"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.49" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grey_background"
+            android:layout_marginVertical="10dp">
+
+
+            <ProgressBar
+                android:layout_marginLeft="20dp"
+                android:id="@+id/fifthProgress"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/grey_background"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/circle_progress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:progress="80" />
+
+            <TextView
+                android:id="@+id/fifthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="10sp"
+                android:elevation="1dp"
+                android:text="%100"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/fifthProgress"
+                app:layout_constraintEnd_toEndOf="@+id/fifthProgress"
+                app:layout_constraintStart_toStartOf="@+id/fifthProgress"
+                app:layout_constraintTop_toTopOf="@+id/fifthProgress">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Hava yollarının gevşemesi sonucu nefes alış verişiniz rahatladı ve enerji düzeyiniz arttı."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fifthProgress"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.49" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grey_background"
+            android:layout_marginVertical="10dp">
+
+
+            <ProgressBar
+                android:id="@+id/sixthProgress"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/grey_background"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/circle_progress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="20dp"
+                tools:progress="80" />
+
+            <TextView
+                android:id="@+id/sixthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="10sp"
+                android:elevation="1dp"
+                android:text="%100"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/sixthProgress"
+                app:layout_constraintEnd_toEndOf="@+id/sixthProgress"
+                app:layout_constraintStart_toStartOf="@+id/sixthProgress"
+                app:layout_constraintTop_toTopOf="@+id/sixthProgress">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Vücudunuzdaki bütün dolaşım düzeldi, yürürken yorulma ve tıkanma daha az görülmeye başlandı."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/sixthProgress"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.49" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/grey_background">
+
+
+            <ProgressBar
+                android:id="@+id/seventhProgress"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/grey_background"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/circle_progress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:progress="80" />
+
+            <TextView
+                android:id="@+id/seventhText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="10sp"
+                android:elevation="1dp"
+                android:text="%100"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/seventhProgress"
+                app:layout_constraintEnd_toEndOf="@+id/seventhProgress"
+                app:layout_constraintStart_toStartOf="@+id/seventhProgress"
+                app:layout_constraintTop_toTopOf="@+id/seventhProgress">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Solunum yolu problemleriniz düzeldi. Akciğeriniz fonksiyonlarının yarısını geri kazandı"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/seventhProgress"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.49" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
